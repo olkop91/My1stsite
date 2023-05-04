@@ -40,6 +40,11 @@ body{
     margin: 0 auto;
     margin: 0 auto;
 }
+:root{
+    --color1:#130e27;
+    --color2:#c62314;
+    --color3:white;
+}
 .container{
     margin: 0 auto;
     max-width: 1000px;
@@ -72,12 +77,13 @@ body{
 .nav{
     display: flex;
     list-style: none;
-    margin: 60px 0 0 0;
+    margin: 60px 15px 0 0;
 }
-.nav_item {
+
+.nav li {
     margin-right: 10px;
     padding: 12px;
-    color: white;
+    color: var(--color3)
     text-transform: uppercase;
     font-family: sans-serif;
     font-size: 16px;
@@ -85,6 +91,12 @@ body{
     font-weight: 500;
       
 }
+.nav li:last-child{
+    margin-right: 0;
+}
+
+
+
 .nav_item:hover{
     background-color:#130e27 ;
     border-radius: 10%;
@@ -97,7 +109,7 @@ body{
 }
 .head1 {
     font-family: "Montserrat";
-    color: rgb(19, 14, 39);
+    color: var(--color1);
     font-size: 75px;
     margin: 130px 0 0 0;
     line-height:70px;
@@ -108,7 +120,7 @@ body{
     font-family: "PTserif";
     margin: 75px 0 0 0;
     font-size: 20px;
-    color: white;
+    color: var(--color3);
     text-align: left;
 }
 .services {
@@ -136,7 +148,7 @@ body{
     justify-content: center;
     font-size: 150px;
     text-align: center;
-    color: #130e27;
+    color: var(--color1);
 }
 .serv_c_des {
     font-family: "Ptserif";
@@ -145,7 +157,7 @@ body{
     font-size: 25px;
     padding-top:50px ;
     padding-bottom: 70px;
-    color: #130e27;
+    color: var(--color1);
 }
 .story {
     margin-bottom: 60px;
@@ -160,18 +172,18 @@ body{
     padding: 25px 0 25px 20px;
     font-family: "Ptserif";
     font-size:18px ;
-    color: white;
+    color: var(--color3);
     max-width: 600px;
 }
 .story_btn{
     width: 270px;
     height: 60px;
     margin: 20px 0;
-    background-color: #c62314;
+    background-color: var(--color2);
     font-family: "Montserrat";
     text-transform: uppercase;
     tab-size: 18px;
-    color: white;
+    color: var(--color3);
     border: none;
     border-radius: 10px;;
 }
@@ -179,7 +191,7 @@ body{
     cursor: pointer;
 }
 .container .price{
-    background-color: #efefef;
+    background-color: var(--color3);
 
 }
 .pr_box {
@@ -231,18 +243,18 @@ body{
     width: 240px;
     height: 45px;
     margin: 20px 0;
-    background-color: #c62314;
+    background-color: var(--color2);
     font-family: "Montserrat";
     text-transform: uppercase;
     tab-size: 18px;
-    color: white;
+    color: var(--color3);
     border: none;
     border-radius: 10px;;
 }
 
 .btn_pr:hover{
     background-color: #130e27;
-    color: white;
+    color: var(--color3);
     cursor: pointer;
 }
 .footer {
@@ -252,7 +264,7 @@ body{
 .cnt_footer{
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--color3);
     font-size: 20px;
     font-family: "Ptserif";
 }
