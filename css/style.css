@@ -148,7 +148,7 @@ body{
     color: #130e27;
 }
 .story {
-
+    margin-bottom: 60px;
     background-color: #130e27;
 
 }
@@ -180,10 +180,11 @@ body{
 }
 .container .price{
     background-color: #efefef;
+
 }
-/* .pr_box {
-    margin-top: 70px;
-} */
+.pr_box {
+    margin-bottom: 60px;
+}
 .pricing {
     padding: 50px 0;
     margin: 0 auto;
@@ -245,7 +246,6 @@ body{
     cursor: pointer;
 }
 .footer {
-    margin-top: 60px;
     padding:45px;
     background-color: #130e27;
 }
